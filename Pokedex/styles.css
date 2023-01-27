@@ -1,0 +1,160 @@
+
+body{
+    background-color: burlywood;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.main_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    max-height: 80vh;
+}
+
+#pokemonName{
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.pokemonNameDetail{
+    text-align: center;
+    font-size: 48px;
+}
+
+.description
+{
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    max-height: 150px;
+    background-color: cornsilk;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 1.1rem;
+    overflow-y: auto;
+}
+
+.pokemonType
+{
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.pokemonImg
+{
+    justify-self: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 200px;
+    background-color: white;
+}
+
+
+
+.fire
+{
+    background-color: red;
+}
+
+.grass
+{
+    background-color: green;
+}
+
+.water
+{
+    background-color: blue;
+}
+
+.ice
+{
+    background-color: lightblue;
+}
+
+.electric
+{
+    background-color: gold;
+}
+
+.fighting
+{
+    background-color: darkred;
+}
+
+.flying
+{
+    background-color: skyblue;
+}
+
+.bug
+{
+    background-color: yellowgreen;
+}
+
+.ghost
+{
+    background-color: purple;
+}
+
+.rock
+{
+    background-color: sienna;
+}
+
+.ground
+{
+    background-color: burlywood;
+}
+
+.steel
+{
+    background-color: silver;
+}
+
+.psychic
+{
+    background-color: palevioletred;
+}
+
+.fairy
+{
+    background-color: pink;
+}
+
+.dragon
+{
+    background-color: teal;
+}
+
+.poison
+{
+    background-color: darkviolet;
+}

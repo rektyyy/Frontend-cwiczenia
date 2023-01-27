@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact us!</title>
+</head>
+<body>
+    <main class="main_form">
+        <header class="main_header main_items">
+            <h1 class="main_header__header">Contact us!</h1>
+        </header>
+        <form class="main_form__form main_items">
+            <label class="a1" for="name">Name*:</label>
+            <input class="item a2" id="name" name="name" type="text" placeholder="John" required/>
+
+            <label class="b1" for="surname">Surname:</label>
+            <input class="item b2" id="surname" name="surname" type="text"/>
+
+            <label class="c1" for="email">Email*:</label>
+            <input class="item c2" id="email" name="email" type="email" pattern="\S+@\S+.\S+" placeholder="John@gmail.com" required/>
+
+            <label class="d1" for="phone">Phone number:</label>
+            <input class="item d2" id="phone" name="phone" type="tel" pattern="[0-9]{9}"/>
+
+            <label class="e1" for="contact">Choose a reason*:</label>
+            <select class="item e2" name="contact" id="contact" required>
+                <option value="" selected disabled>Select option</option>
+                <option value="one">Networking problems</option>
+                <option value="two">Display problems</option>
+                <option value="three">Hardware failure</option>
+                <option value="four">Other</option>
+            </select>
+
+            <label class="f1" for="message">Additional notes*:</label>
+            <textarea class="item f2" id="message" name="message" type="text" rows="8" cols="30" placeholder="Write here." required></textarea> 
+
+            <label class="g1" for="newsletter">Newsletter:</label>
+            <input class="item g2" type="checkbox" id="newsletter" name="newsletter" type="text"/>
+
+
+            <button class="item h form_button" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

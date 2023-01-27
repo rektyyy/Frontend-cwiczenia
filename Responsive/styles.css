@@ -1,0 +1,168 @@
+*{  
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+body{
+    background-color: #FBF5F5;
+}
+
+.main_form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main_items{
+    margin: auto;
+}
+
+.form_button{
+    background-color: blue;
+    color: #FBF5F5;
+    border-radius: 8px;
+}
+
+.item:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+.a1{
+    grid-area: a1;
+}
+.b1{
+    grid-area: b1;
+}
+.c1{
+    grid-area: c1;
+}
+.d1{
+    grid-area: d1;
+}
+.e1{
+    grid-area: e1;
+}
+.f1{
+    grid-area: f1;
+}
+.g1{
+    grid-area: g1;
+    justify-self: end;
+}
+.a2{
+    grid-area: a2;
+}
+.b2{
+    grid-area: b2;
+}
+.c2{
+    grid-area: c2;
+}
+.d2{
+    grid-area: d2;
+}
+.e2{
+    grid-area: e2;
+}
+.f2{
+    grid-area: f2;
+}
+.g2{
+    grid-area: g2;
+    justify-self: start;
+    align-self: center;
+    width: 1rem;
+    height: 1rem;
+}
+.h{
+    grid-area: h;
+}
+
+label{
+    align-self: center;
+}
+
+.main_form__form{
+    grid-auto-rows: 2rem;
+}
+
+@media (max-width: 500px){
+    .main_form__form{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+        grid-template-areas:
+        "a1"
+        "a2"
+        "b1"
+        "b2"
+        "c1"
+        "c2"
+        "d1"
+        "d2"
+        "e1"
+        "e2"
+        "f1"
+        "f2"
+        "f2"
+        "g1"
+        "g2"
+        "h"
+    }
+    .g1{
+        justify-self: center;
+    }
+    .g2{
+        justify-self: center;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    .main_form__form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        grid-template-areas:
+        "a1 a2"
+        "b1 b2"
+        "c1 c2"
+        "d1 d2"
+        "e1 e2"
+        "f1 f2"
+        "f1 f2"
+        "g1 g2"
+        "h h"
+
+    }
+}
+
+@media (min-width: 1000px){
+    .main_form__form{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        grid-template-areas:
+        "a1 a2 b1 b2"
+        "c1 c2 d1 d2"
+        "e1 e2 e2 e2"
+        "f1 f2 f2 f2"
+        "f1 f2 f2 f2"
+        ". g1 g2 ."
+        "h h h h"
+
+    }
+}
+
+@media (pointer: coarse), (pointer: none){
+    .g2{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
